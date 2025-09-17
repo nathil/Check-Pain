@@ -10,3 +10,14 @@ O paciente também poderá informar a intensidade das dores e os locais, para qu
 As opções de acompanhamento são para: dores de cabeça crônica, dores crônicas no corpo, além de uma área para o humor do dia, para observar se há 
 correlação entre fatores emocionais e físicos. Com isso, o programa gera infográficos com um apanhado geral. Este projeto é desenvolvido com o framework flutter em conjunto
 com a linguagem de programação dart.
+
+
+<h2> Ferramentas </h2>
+<p display="inline-block">
+  <img width="45 "height="45" src="https://github.com/user-attachments/assets/62fa8c7b-06d1-4f78-bdb3-3aaf3dc85059" alt="dart"/>
+  <img width="45" height="45" src="https://github.com/user-attachments/assets/b7d95368-80bc-4971-8ea3-4f8ec9df8f1e" alt="flutter"/>
+  <img width="45" height="45" src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma"/>
+</p>
+
+<h2> Ambientes de Desenvolvimento </h2>
+<img width="45" height="45" src="https://github.com/user-attachments/assets/c4312966-a2d8-43f2-bb47-0dbe1adc6806" alt="vscode" />
