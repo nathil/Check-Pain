@@ -18,15 +18,9 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(  
-      bottomNavigationBar: Theme(
-    data: Theme.of(context).copyWith(
-        // sets the background color of the `BottomNavigationBar`
-        canvasColor: Color.fromRGBO(148, 199, 182, 1),
-        // sets the active color of the `BottomNavigationBar` if `Brightness` is light
-        primaryColor: Color.fromRGBO(148, 199, 182, 1),
-      ), 
       
-    child: BottomNavigationBar(
+      bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         showSelectedLabels: false,
         showUnselectedLabels: false,
         items: const [
@@ -36,22 +30,31 @@ class _HomeScreenState extends State<HomeScreen> {
           BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Perfil')
         ],
         currentIndex: 0,
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         selectedItemColor: Theme.of(context).colorScheme.onPrimary,
         unselectedItemColor: Theme.of(context).colorScheme.onPrimary,
         // onTap: _onItemTapped, 
-      ),
-  ),
+      ), 
       
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        
-        title: Text('Check Pain'),
+        backgroundColor: Colors.transparent,
+        centerTitle: true,
+        title: Text('Check Pain', style: TextStyle(color: Color(0xff7F7F7F), fontSize: 16)),
+        actionsPadding: EdgeInsets.only(right: 16),
+        actions: [
+          IconButton.filled(
+            iconSize: 30,
+            style: IconButton.styleFrom(backgroundColor: Color(0xff94c7b6)),
+            icon: Icon(Icons.person_outline_outlined, color:Theme.of(context).colorScheme.onPrimary,), 
+            onPressed:(){},
+          ),
+        ],
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text('texto que eu gosto mais.'),
+          children:[
+            const Text('Olá, Nome Usuário'),
           ],  
         ),
       ),
